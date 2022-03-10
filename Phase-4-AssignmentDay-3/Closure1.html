@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body>
+    <h2>Closure Demo</h2>
+    <script>
+        function test()
+        {
+            if(true)
+            {
+                var a ="Hello";//Exist in function scope
+                let b ="Good Morning";//exist in parent scope
+                const c="How are you ";//exist in block scope
+            }
+            console.log("var" +a);
+            console.log("let:" +b);//This is not accessed outside parent scope......If we want to use it make it global
+            console.log("const" +c);//This is also not accesed outside the block scope
+        }
+        test();
+    </script>
+</body>
+</html>
