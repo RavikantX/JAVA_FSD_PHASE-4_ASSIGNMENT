@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Map demo</h2>
+    <script>
+        var map= new Map();
+        map.set(101,"Ravi");//Here i have used map.set method
+        map.set(102,"Kant");
+        map.set(103,"Priya");
+        map.set(104,"johnny");
+
+        console.log(map);
+
+        console.log("Has 103 user? "+map.has(103));//Here i have used map.has method
+        console.log("get value of 104: "+map.get(104));//Here i have used map.get method
+        console.log("Delet user 102: "+map.delete(102));//Here i have used map.delete method
+
+        console.log(map);
+        map.clear();
+        console.log(map);
+
+    </script>
+</body>
+</html>
